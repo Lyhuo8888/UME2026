@@ -82,4 +82,11 @@
         fmTimer.MdiParent = Me
         fmTimer.Show()
     End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        Dim fmLogin As New frmLogin
+        fmLogin.Show()
+        Me.Hide()
+
+    End Sub
 End Class

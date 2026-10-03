@@ -8,10 +8,23 @@
         inputUser = txtUserName.Text
         inputPass = txtPassword.Text
 
-        If inputUser = correctUser And inputPass = correctPass Then
+        Static i As Byte
+
+        If Trim(inputUser.ToUpper) = Trim(correctUser.ToUpper) And inputPass = correctPass Then
             MessageBox.Show("Login Successfully!")
+            txtUserName.Clear()
+            txtPassword.Clear()
+            Dim frmMain As New frmMainForm
+            frmMain.Show()
+            Me.Hide()
+            i = 0
         Else
-            MessageBox.Show("Incorrect Username or Password!")
+            i += 1
+            MessageBox.Show("Incorrect Username or Password!" & vbCrLf & "Attempts remaining: " & (3 - i))
+        End If
+
+        If i = 3 Then
+            Application.Exit()
         End If
 
 
@@ -19,5 +32,10 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
+    End Sub
+
+    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'txtUserName.Clear()
+        'txtPassword.Clear()
     End Sub
 End Class

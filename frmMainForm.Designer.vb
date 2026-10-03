@@ -68,7 +68,7 @@ Partial Class frmMainForm
         ' 
         LogoutToolStripMenuItem.Image = CType(resources.GetObject("LogoutToolStripMenuItem.Image"), Image)
         LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        LogoutToolStripMenuItem.Size = New Size(139, 26)
+        LogoutToolStripMenuItem.Size = New Size(224, 26)
         LogoutToolStripMenuItem.Text = "Logout"
         ' 
         ' ToolToolStripMenuItem
@@ -169,28 +169,28 @@ Partial Class frmMainForm
         ' 
         AverageToolStripMenuItem.Image = CType(resources.GetObject("AverageToolStripMenuItem.Image"), Image)
         AverageToolStripMenuItem.Name = "AverageToolStripMenuItem"
-        AverageToolStripMenuItem.Size = New Size(224, 26)
+        AverageToolStripMenuItem.Size = New Size(147, 26)
         AverageToolStripMenuItem.Text = "Average"
         ' 
         ' DivideToolStripMenuItem
         ' 
         DivideToolStripMenuItem.Image = CType(resources.GetObject("DivideToolStripMenuItem.Image"), Image)
         DivideToolStripMenuItem.Name = "DivideToolStripMenuItem"
-        DivideToolStripMenuItem.Size = New Size(224, 26)
+        DivideToolStripMenuItem.Size = New Size(147, 26)
         DivideToolStripMenuItem.Text = "Divide"
         ' 
         ' VariableToolStripMenuItem
         ' 
         VariableToolStripMenuItem.Image = CType(resources.GetObject("VariableToolStripMenuItem.Image"), Image)
         VariableToolStripMenuItem.Name = "VariableToolStripMenuItem"
-        VariableToolStripMenuItem.Size = New Size(224, 26)
+        VariableToolStripMenuItem.Size = New Size(147, 26)
         VariableToolStripMenuItem.Text = "Variable"
         ' 
         ' TimerToolStripMenuItem
         ' 
         TimerToolStripMenuItem.Image = CType(resources.GetObject("TimerToolStripMenuItem.Image"), Image)
         TimerToolStripMenuItem.Name = "TimerToolStripMenuItem"
-        TimerToolStripMenuItem.Size = New Size(224, 26)
+        TimerToolStripMenuItem.Size = New Size(147, 26)
         TimerToolStripMenuItem.Text = "Timer"
         ' 
         ' frmMainForm
